@@ -26,7 +26,7 @@
     </v-parallax>
     <v-container class="mt-5 dark black--background component-container" id="About">        
       <v-card :elevation="5" class="home-cards">
-        <About :discord="dicord" :teamMembers="teamMembers"/>
+        <About/>
       </v-card>
     </v-container>
   </div>
