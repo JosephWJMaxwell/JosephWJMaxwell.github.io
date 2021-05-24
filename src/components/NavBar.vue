@@ -7,7 +7,7 @@
                     <v-app-bar-nav-icon class="white--text icon_transparent" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
-                    <!-- <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn> -->
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
