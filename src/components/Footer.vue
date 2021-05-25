@@ -20,17 +20,11 @@
                 target="_targetBlank">
                 <v-icon size="24px">{{ media.icon }}</v-icon>
               </v-btn>
-              <div>
-                <a target="_blank" :href="squadLink.link" width="75px !important"><img src="@/assets/squad_white.png" class="justify-center" style="margin:3px 10px 0 10px" width="75px"></a>
-              </div>              
-              <div>
-                <a target="_blank" :href="minecraftLink.link" width="75px !important"><img src="@/assets/minecraft_logo.jpg" class="justify-center" style="margin:5px 10px 0 10px" width="45px"></a>
-              </div>              
             </v-row>
           </v-flex>
         </v-card-text>
       <v-card-text class="white--text pt-0">
-        If you have any questions or inquiries please contact one of our administration members on our <a class="link" :href="discordLink.link" target="_targetBlanks">discord</a>.
+        If you have any questions or inquiries please contact via Instagram.
       </v-card-text>
 
       <v-divider></v-divider>
@@ -56,18 +50,12 @@ export default {
       mediaLinks: mediaLinks,
       discordLink: mediaLinks.find(o=>{
         return o.name === "discord";
-      }),
-      squadLink: mediaLinks.find(o=>{
-        return o.name === "squad";
-      }),
-      minecraftLink: mediaLinks.find(o=>{
-        return o.name === "minecraft";
       })
     }
   },
   computed:{
     mediaLinksFiltered(){ 
-      return this.mediaLinks.filter(o=> o.name === "discord" || o.name === "patreon")}
+      return this.mediaLinks.filter(o=> o.name === "discord")}
   }
 }
 </script>

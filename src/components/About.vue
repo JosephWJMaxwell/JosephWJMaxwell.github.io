@@ -11,20 +11,12 @@
                         Our board of directors currently consist of the 17 members below, not listed are our many trustworthy admins for our various servers. If you have any questions or
                         inquiries, please contact us in our Discord.
                     </div>
-                    <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" style="margin-top:20px;">
-                        Our Team
-                    </div>
                     <v-container class="my-5">
                         <v-layout row wrap>
                             <v-flex xs12 sm6 md4 lg3  v-for="(person, index) in teamMembers" :key="index">
                                 <v-hover v-slot:default="{ hover }">
                                     <v-card class="text-xs-center ma-3" :elevation="hover ? 10 : 2">
-                                        <v-card-text>
-                                            <div class="subheading">{{person.name}}</div>
-                                            <div v-for="(role, index) in person.roles" :key="index" class="grey--text" :class="role.name">
-                                                {{role.name.replace(/_/g, " ")}}
-                                            </div>
-                                        </v-card-text>
+                                        
                                     </v-card>
                                 </v-hover>
                             </v-flex>
@@ -39,7 +31,7 @@
             <v-flex xs12 sm7 md6 lg4 xl3 just>
                 <v-hover v-slot:default="{ hover }">
                     <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;">
-                        <v-card-text>
+                        <!-- <v-card-text>
                             <v-layout wrap my-5 style="margin: 0 !important;">
                                 <v-flex justify-center class="mt-2">
                                     <v-layout wrap>
@@ -81,7 +73,7 @@
                                         </v-expansion-panel-content>
                                     </v-expansion-panel>
                                 </v-expansion-panels>
-                            </div>
+                            </div> -->
                     </v-card>  
                 </v-hover>
             </v-flex>
@@ -91,20 +83,7 @@
 
 <script>
 export default {
-    props: {
-        discord: {
-        type: Object,
-        default: function () {
-                return {};
-            },
-        },
-        teamMembers: {
-        type: Array,
-        default: function () {
-                return {};
-            },
-        }
-    }
+
 };
 </script>
 
@@ -118,26 +97,5 @@ export default {
 }
 .flex.xl3{
     flex-basis: 20% !important;
-}
-.Founder{
-    color: mix(#f3482a, grey) !important;
-}
-.Administrator{
-    color: mix(red, grey) !important;
-}
-.Advisor{
-    color: mix(rgb(223, 58, 223), grey) !important;
-}
-.Director_of_Squad{
-    color: rgb(228, 107, 8) !important;
-}
-.Director_of_Escape_From_Tarkov{
-    color: mix(#2292ac, grey) !important;
-}
-.Director_of_Rust{
-    color: mix(#7a22ac, grey) !important;
-}
-.Director_of_Recruitment{
-    color: mix(#3b38dd, grey) !important;
 }
 </style>
