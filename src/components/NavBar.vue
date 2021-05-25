@@ -8,6 +8,11 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text>Announcements</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text>Player Stats</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/liqweekly" text><sub style="margin: 0 5px 13px 0;color: aquamarine">NEW</sub>LiQ Weekly</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -61,6 +66,7 @@
 
 <script>
 // import * as easings from "vuetify/es5/services/goto/easing-patterns";
+import { mdiTrophyAward } from '@mdi/js';
 export default {
   data() {
     return {
@@ -68,6 +74,15 @@ export default {
       links: [
         { title: 'Home', icon: 'mdi-home-city', route: '/' },
         { title: 'About', icon: 'mdi-account-group-outline', route: '' },
+        { title: 'Servers', icon: 'mdi-dns', route: '' },
+        { title: 'Recruitment', icon: 'assignment', route: '' },
+        { title: 'Announcements', icon: 'connect_without_contact', route: '/announcements' },
+        { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
+        { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
+        { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
+        { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
+        { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' },
+        { title: 'Patreon', icon: 'mdi-patreon', route: '/patreon' }
       ],
       mini: true,
       fab: false,

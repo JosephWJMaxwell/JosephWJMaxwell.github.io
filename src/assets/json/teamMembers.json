@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Almtree",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Apache1",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Budge",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Chase",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "SuperFlanker",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Got2bhockey",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
+                }
+            ]
+    },
+    {
+        "name": "Wolf Fang",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
+                }
+            ]
+    },
+    {
+        "name": "CeeJay",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Chaoth3ch",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Kibz",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Magical Girl",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Shaka",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },    
+    {
+        "name": "Lorn",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Escape_From_Tarkov"
+                }
+            ]
+    },    
+    {
+        "name": "Basa (Doc)",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Rust"
+                }
+            ]
+    },
+    {
+        "name": "Binx",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Squad"
+                }
+            ]
+    }
+]
